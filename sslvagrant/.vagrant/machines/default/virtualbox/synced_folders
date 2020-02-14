@@ -1,0 +1,1 @@
+{"virtualbox":{"/Users/britton/Desktop/sslvagrant-data":{"create":true,"guestpath":"/Users/britton/Desktop/sslvagrant-data","hostpath":"/Users/britton/Desktop/sslvagrant","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/britton/Desktop/sslvagrant","disabled":false,"__vagrantfile":true}}}

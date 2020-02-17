@@ -6,22 +6,22 @@ class Test
         @aName=gets
         puts "What did you make on #@aName"
         @grade=gets
-        grader (@grade,@aName)
+        grader(@grade.to_i,@aName)
 
     end
 
     def grader (x,aName)
         if x >= 90
-            puts `You got an A on #{@aName}!`
+            puts "You got an A on #@aName!"
         elsif x >= 80
-            puts `You got a B on #{@aName}!`
+            puts "You got a B on #@aName!"
         elsif x >= 70 
-            puts`You got a C on #{@aName}!`
-         elsif x >= 61 
-            puts`You got a D on #{@aName}!`
-         else 
-            puts`You got a F on #{@aName}!`
-         end
+            puts"You got a C on #@aName!"
+        elsif x >= 61 
+            puts"You got a D on #@aName!"
+        else 
+            puts"You got a F on #@aName!"
+        end
         
     end
 end

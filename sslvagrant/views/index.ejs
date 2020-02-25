@@ -1,88 +1,13 @@
-<!-- First and Last Name
-Address
-City
-State
-Zip
-Age (dropdown)
-Gender (radio)
-Consent(checkmark)
-Bio (Textarea) -->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name=" "
-        content=" ">
-</head>
-
 <body>
-    <!-- <form class="form"
-        method="post"
-        action="/register">
-    </form> -->
-    <form class="form-group"
-        method="post"
-        action="/register">
-
-        <input type="text"
-            id="fname"
-            placeholder="First Name"
-            name="fname">
-        <input type="text"
-            placeholder="Last Name"
-            id="lname"
-            name="lname">
-        <input type="text"
-            placeholder="Address"
-            id="addy"
-            name="addy">
-        <input type="text"
-            placeholder="City"
-            id="city"
-            name="city">
-        <input type="number"
-            placeholder="Zip"
-            id="zip"
-            name="zip">
-
-        <select>
-            <script id="age">
-                let html = '';
-                for (let i = 1; i <= 100; i++) {
-                    html += `<option>${i}</option>`;
-                }
-                let form = document.querySelector('select');
-                form.insertAdjacentHTML('beforeend', html);
-            </script>
-        </select>
-
-        <input type="radio"
-            id="gender male"
-            name="gender"
-            value="male">
-        <label
-            for="male">Male</label><br>
-        <input type="radio"
-            id=" gender female"
-            name="gender"
-            value="female">
-        <label
-            for="female">Female</label><br>
-
-        <input type="checkbox"
-            id="consent"
-            name="agree"
-            value="Accept Terms and conditions">
-        <label for="agree"> Accept
-            Terms and
-            conditions</label><br>
-
-        <button
-            type="submit">Submit</button>
-    </form>
-
+    <h1>test</h1>
+    <% if(typeof(errors)!="undefined"){%>
+    <%for(x in errors){%>
+    <br><span>Errors:<%=errors[x]%></span>
+    <%}}%>
+    <a href="/login">login</a>
 </body>
 
 </html>
